@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Store</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #FFEFBA;  
+        background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  
+        background: linear-gradient(to right, #FFFFFF, #FFEFBA); 
+    }
+    .header {
+      background: #7F7FD5;  
+      background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+      background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+      color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 3rem;
+    }
+    .product-section {
+      padding: 50px 0;
+    }
+    .product-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-info {
+      padding: 20px;
+    }
+    .product-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 1.25rem;
+      color: #007bff;
+    }
+    .cta-section {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      background-color: #ffffff;
+      color: #007bff;
+      border: 2px solid #ffffff;
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to Perfume Paradise</h1>
+  <p>Discover a world of captivating fragrances</p>
+  
+</div>
+
+<div class="container product-section">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        {% load static %}
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/las-ultimas-tendencias-de-belleza-maquillaje-y-peinados.-los-looks-de-las-famosas/perfumes-mas-vendidos/chanel-n15-de-chanel/2020149-1-esl-ES/chanel-n15-de-chanel.jpg?crop=1.00xw:0.856xh;0,0.0674xh&resize=980:*" alt="Perfume 1">
+        <div class="product-info">
+          <h3 class="product-title">Chanel nº5' de Chanel</h3>
+          <p class="product-price">$1,675.99</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/shalimar-de-guerlain2/2020129-1-esl-ES/shalimar-de-guerlain.jpg?crop=1.00xw:0.856xh;0,0.144xh&resize=980:*" alt="Perfume 2">
+        <div class="product-info">
+          <h3 class="product-title">'Shalimar' de Guerlain</h3>
+          <p class="product-price">$1,303.39</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/poison-de-christian-dior2/2020189-1-esl-ES/poison-de-christian-dior.jpg?crop=1.00xw:0.856xh;0,0.144xh&resize=980:*" alt="Perfume 3">
+        <div class="product-info">
+          <h3 class="product-title">'Poison' de Christian Dior</h3>
+          <p class="product-price">$1,750.69</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/opium-de-yves-saint-laurent2/2020119-1-esl-ES/opium-de-yves-saint-laurent.jpg?crop=1.00xw:0.856xh;0,0.142xh&resize=980:*" alt="Perfume 4">
+        <div class="product-info">
+          <h3 class="product-title">'Opium' de Yves Saint Laurent</h3>
+          <p class="product-price">$837.88</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/joy-de-jean-patou2/2020109-1-esl-ES/joy-de-jean-patou.jpg?crop=1.00xw:0.856xh;0,0.119xh&resize=980:*" alt="Perfume 5">
+        <div class="product-info">
+          <h3 class="product-title">'Joy' de Jean Patou</h3>
+          <p class="product-price">$651.70</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/l-air-du-temps-de-nina-ricci2/2020159-1-esl-ES/l-air-du-temps-de-nina-ricci.jpg?crop=1.00xw:0.856xh;0,0.0907xh&resize=980:*" alt="Perfume 6">
+        <div class="product-info">
+          <h3 class="product-title">'L'air du temps' de Nina Ricci</h3>
+          <p class="product-price">$1,117.21</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/euphoria-de-calvin-klein2/2020139-1-esl-ES/euphoria-de-calvin-klein.jpg?crop=0.546875xw:1xh;center,top&resize=980:*" alt="Perfume 7">
+        <div class="product-info">
+          <h3 class="product-title">'Euphoria' de Calvin Klein</h3>
+          <p class="product-price">$1,638.58</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/classique-jean-paul-gaultier-1660031866.jpeg?crop=0.8xw:1xh;center,top&resize=980:*" alt="Perfume 8">
+        <div class="product-info">
+          <h3 class="product-title">'Classique' de Jean Paul Gaultier</h3>
+          <p class="product-price">$651.70</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/angel-de-thierry-mugler2/2020169-1-esl-ES/angel-de-thierry-mugler.jpg?crop=1.00xw:0.856xh;0,0.124xh&resize=980:*" alt="Perfume 9">
+        <div class="product-info">
+          <h3 class="product-title">'Angel' de Thierry Mugler</h3>
+          <p class="product-price">$968.27</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/hares/images/belleza/tendencias/fragancias-mas-vendidas/youth-dew-de-estee-lauder2/2020179-1-esl-ES/youth-dew-de-estee-lauder.jpg?crop=1.00xw:0.856xh;0,0.0919xh&resize=980:*" alt="Perfume 10">
+        <div class="product-info">
+          <h3 class="product-title">'Youth Dew' de Estée Lauder</h3>
+          <p class="product-price">$465.51</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://ss701.liverpool.com.mx/xl/1098196834.jpg" class="bg-white" alt="Perfume 11">
+        <div class="product-info">
+          <h3 class="product-title">Le Male Le Parfum Jean Paul Gaultier</h3>
+          <p class="product-price">$2,780.00</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="product-card bg-white">
+        <img src="https://m.media-amazon.com/images/I/61gYA+t9Q1L.jpg" alt="Perfume 312">
+        <div class="product-info">
+          <h3 class="product-title">Le Beau Le Parfum Jean Paul Gaultier</h3>
+          <p class="product-price">$2,069</p>
+          <button class="btn btn-success">Buy!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>Tenemos nueva colaboracion con CamisasGod</h2>
+  <a href="{% url 'camisaspage' %}" class="cta-button">Visitar Pagina</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
